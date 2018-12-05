@@ -8,5 +8,6 @@ if (environment.production) {
   enableProdMode();
 }
 
+//Configurar todo el ambiente para una aplicación Web
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));

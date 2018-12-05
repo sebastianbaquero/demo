@@ -1,0 +1,42 @@
+<h1 align="center">IoT</h1>
+<!--
+<div class="card" style="width: 18rem;" text-align:center>
+    <img class="card-img-top" src="https://www.mainflux.com/images/iot-platform-stack-mainflux.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">IoT - Solutions title</h5>
+      <p class="card-text">"El paquete de infraestructura de software de Mainflux está compuesto por todos los componentes y microservicios necesarios para las soluciones de IoT. 
+            IoT Cloud Platform facilitará la interoperabilidad de la solución IoT con las aplicaciones empresariales existentes y otras soluciones IoT" - Mainflux</p>
+      <a href="#" class="btn btn-primary">Go</a>
+    </div>
+  </div>
+-->
+
+<div class="row">
+
+    <div class="col">
+        <h1>*ngIf</h1>
+        <hr>
+
+        <div *ngIf="mostrar" class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title"> {{ frase.autor }} </h5>
+                  <p class="card-text">{{ frase.mensaje }}}</p>
+                </div>
+        </div>
+
+        <button (click)="mostrar = !mostrar" class="btn btn-outline-primary">
+            Mostrar/Ocultar
+        </button>
+    </div>
+
+
+    <div class="col">
+        <h1>*ngFor</h1>
+        <hr>
+
+        <ul class="list-group">
+                <li *ngFor="let personaje of personajes; let i = index" class="list-group-item">{{i + 1}}. {{personaje}}</li>
+              </ul>
+    </div>
+
+</div>
